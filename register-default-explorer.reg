@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+; Set Rovik as default file manager for folders
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\open\command]
+@="\"C:\\Users\\Administrator\\Documents\\Github Project\\rovik\\target\\release\\rovik.exe\" \"%1\""
+
+; Set Rovik as default file manager for drives
+[HKEY_CURRENT_USER\Software\Classes\Drive\shell\open\command]
+@="\"C:\\Users\\Administrator\\Documents\\Github Project\\rovik\\target\\release\\rovik.exe\" \"%1\""
+
+; Redirect Win + E hotkey to Rovik
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{52205fd8-5dfb-447d-801a-d0b52f2e83e1}\shell\opennewwindow\command]
+@="\"C:\\Users\\Administrator\\Documents\\Github Project\\rovik\\target\\release\\rovik.exe\""
+"DelegateExecute"=""
